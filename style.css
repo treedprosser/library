@@ -1,0 +1,95 @@
+* {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #E7EFF3;
+}
+
+h1 {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.buttons > button {
+    border: none;
+    background-color: #90E0EF;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.buttons > button:hover {
+    background-color: #c4eff7;
+}
+
+.bookPopup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.formPopup {
+    display: none;
+    position: fixed;
+    left: 45%;
+    top: 20%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #999999;
+    border-radius: 5px;
+    z-index: 9;
+}
+
+.formContainer {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.formContainer input[type="text"],
+.formContainer input[type="number"] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #eee;
+}
+
+.formContainer input[type="text"]:focus,
+.formContainer input[type="number"]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.formContainer > button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #8ebf42;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+.formContainer > button:hover {
+    opacity: 1;
+}
+
+#bookshelf {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.book-card {
+    border: 1px solid #FF8F56;
+    border-radius: 10px;
+    background-color: #E7EFF3;
+    width: 200px;
+    text-align: center;
+}
